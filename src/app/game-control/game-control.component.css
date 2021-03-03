@@ -1,0 +1,13 @@
+
+.btn-outline-primary {
+  margin:1px;
+  width: 100px;
+  height: 100px;
+}
+.btn-outline-success,.btn-outline-danger,.btn-outline-secondary  {
+  margin:3px;
+  width: 100px;
+  height: 50px;
+}
+
+

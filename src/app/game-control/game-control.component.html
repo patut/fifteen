@@ -1,0 +1,36 @@
+<hr>
+<a *ngFor="let item of bone; let i = index">
+  <div *ngIf="((i===4) || (i===8) || (i===12) || (i===0))"></div>
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        (click)="onBoneClick(i)"
+        [disabled]="!boneStatus[i]">
+        <a *ngIf="bone[i] != 0" >{{bone[i]}}</a>
+      </button>
+</a>
+<hr>
+<div>
+  <button
+    type="button"
+    class="btn btn-outline-success"
+    [disabled]="gameStatus=='..Идёт..'"
+    (click)="onStart()">Start</button>
+  <button
+    type="button"
+    class="btn btn-outline-secondary"
+    disabled
+    (click)="onStart()">{{counter}}</button>    <button
+  type="button"
+  class="btn btn-outline-secondary"
+  disabled
+  (click)="onStart()">{{gameStatus}}</button>
+  <button
+    type="button"
+    class="btn btn-outline-danger" (click)="onStop()"
+    [disabled]="gameStatus=='Сыграем?'">
+    Stop</button>
+  <hr>
+</div>
+
+
