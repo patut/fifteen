@@ -54,7 +54,7 @@ export class GameControlComponent implements  OnInit {
     this.setBoneStatus();
   }
 
-  // tslint:disable-next-line:typedef
+ 
   shuffleBone(boneField) {
     for (let i = boneField.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
